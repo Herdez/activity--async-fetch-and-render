@@ -1,3 +1,10 @@
+function trigger(){
+	var fetch = document.querySelector('#btn').addEventListener('click', function(){
+		getApi();
+	});
+	
+}
+
 function getApi() {
 
     const request = superagent;
@@ -18,4 +25,4 @@ function getApi() {
 		});
 }
 
-getApi();
+trigger();
